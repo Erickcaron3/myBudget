@@ -4,9 +4,9 @@
     <head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-        <link type=<c:url value="/css/out/default.css"/> rel="stylesheet" />
-        <link type=<c:url value="/css/out/login.css"/> rel="stylesheet" />
-        <script src="<c:url value="/js/out/login.js"/>"></script>
+        <link href=<c:url value="/css/out/default.css"/> rel="stylesheet" />
+        <link href=<c:url value="/css/out/login.css"/> rel="stylesheet" />
+        <script type="text/javascript" src="<c:url value="/js/out/login.js"/>" defer></script>
     </head>
 
     <body>
