@@ -1,3 +1,4 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,11 +13,7 @@
 
 
     <body>
-
-        <header class="header">
-            <div class="logo">My Budget</div>
-            <div class="hour"></div>                        
-        </header>
+        <jsp:include page="header.jsp"/>
         
         <main>
             <form class="creationForm" action="" method="POST">
@@ -29,7 +26,7 @@
 
                 <label for="gender">Gender</label>
 
-                <div class="gender">
+                <div class="gender" id="gender">
                     <div class="m">
                         <input type="radio" name="gender" value="M" >Male</input>
                     </div>
@@ -60,15 +57,13 @@
                     </div>
                 </form>
 
-                <span class="comeBack"><a href="../index.html">Coming back to login page</a></span>
+                <span class="comeBack"><a href="../index.jsp">Coming back to login page</a></span>
 
         </main>
-            
-        <footer>
-            <span>2021 - By ErickCaron.net</span>
-        </footer>
 
-    </div>
+        <jsp:include page="header.jsp"/>
+
+        </div>
 </body>
 </html>
 

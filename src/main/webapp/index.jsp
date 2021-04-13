@@ -1,23 +1,19 @@
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="../css/out/default.css"> 
-        <link type="text/css" rel="stylesheet" href="../css/out/login.css"> 
-        <script type="text/javascript" src="../js/main.js" defer></script>
-        <script type="text/javascript" src="../js/out/login.js" defer></script>
-
+        <link type=<c:url value="/css/out/default.css"/> rel="stylesheet" />
+        <link type=<c:url value="/css/out/login.css"/> rel="stylesheet" />
+        <script src="<c:url value="/js/out/login.js"/>"></script>
     </head>
 
-
     <body>
-        <header class="header">
-            <div class="logo">My Budget</div>
-            <div class="hour"></div>                        
-        </header>
-        
-        <main>
+    <jsp:include page="/out/header.jsp"/>
+
+
+    <main>
             <form class="login" action="" method="POST">
                 <label for="login">Login</label>
                 <input id="login" type="text" required/>
@@ -32,15 +28,14 @@
                 <button>Enter</button>
             </form>
             <div class="formOptions">
-                <span class="formOption" id="formOptionCreate">Not member yet? <a href="out/create.html">Create your account now!</a></span>
+                <span class="formOption" id="formOptionCreate">Not member yet? <a href="out/create.jsp">Create your account now!</a></span>
                 <span class="formOption" id="formOptionHelp"><a href="">I don't remember my login/password</a></span>
             </div>
 
         </main>
-            
-        <footer>
-            <span>2021 - By ErickCaron.net</span>
-        </footer>
+
+    <jsp:include page="/out/footer.jsp"/>
+
 
     </div>
 </body>
