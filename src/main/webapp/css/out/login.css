@@ -1,0 +1,72 @@
+
+
+main{
+    width: 25%;
+    margin: auto;
+    margin-top: 20px;
+    background: rgba(160, 212, 212, 1);
+    border: 2px#339899 dotted;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+input, label{
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+button{
+    width: 25%;
+    border-radius: 10px;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+
+}
+
+.remMe{
+    display: flex;
+    flex-direction: row;
+}
+
+.remMe label{
+    order: 1;
+    margin:0;
+}
+.remMe input{
+    margin:0;
+}
+
+.login button{
+    font-family: 'Comic sans Ms', Courier, monospace;
+    color: white;
+    border-radius: 10px;
+    background: rgba(160, 212, 212, 1);
+    border: 2px#339899 dotted;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.formOptions{
+    display: flex;
+    flex-direction: column;
+}
+
+.formOption{
+    margin: 10px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

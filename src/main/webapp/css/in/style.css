@@ -1,0 +1,90 @@
+body {
+    background-image: url("../../img/background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Comic sans Ms', Courier, monospace;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: rgba(160, 212, 212, 1);
+    border-bottom: 2px#339899 solid;
+    font-family: 'Nanum Pen Script', cursive;
+}
+   
+    
+
+.logo{
+    color: #339899;
+    font-size: 50px;
+    margin-top: 5px;
+    margin-left: 25px;
+
+}
+
+.balance{
+    color: #339899;
+    font-size: 50px;
+    margin-top: 5px;
+}
+
+.balance span{
+    margin: 5px;
+}
+
+.hour{
+    color: #339899;
+    font-size: 50px; 
+    margin-top: 5px;
+    margin-right: 25px; 
+}
+
+.menu{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    background: rgba(160, 212, 212,1);
+    color: #339899;
+    font-size: 1.2em;
+    border-bottom: 2px#339899 solid;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menuElement{
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+
+footer{
+    font-family: 'Nanum Pen Script', cursive;
+    border-top: 1px white solid;
+    background-color: rgba(255,166,115,1);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer span {
+    font-size: 2em;
+    color: #f6e4d9;
+    margin: 10px;
+    height: 50px;
+}
+
+
