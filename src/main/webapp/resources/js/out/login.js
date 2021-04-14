@@ -1,5 +1,4 @@
-
-function currentTime(){
+function currentTime() {
     let date = new Date();
     let hour = date.getHours();
     let minute = date.getMinutes();
@@ -12,14 +11,14 @@ function currentTime(){
     let clock = document.querySelector(".hour");
     clock.innerHTML = hour + " : " + minute + " : " + seconde;
 
-    let t = setTimeout(function(){
+    let t = setTimeout(function () {
         currentTime();
     }, 1000);
 
 }
 
-function updateTime(input){
-    if (input < 10){
+function updateTime(input) {
+    if (input < 10) {
         return "0" + input;
     } else {
         return input;
@@ -34,16 +33,15 @@ const formOptionsElements = formOptions.children
 
 interactionColor(formOptionsElements);
 
-function interactionColor(array){
+function interactionColor(array) {
 
-    for(let element of array){
-        element.addEventListener("mouseover", function(){
-            element.style.color="#339899";
+    for (let element of array) {
+        element.addEventListener("mouseover", function () {
+            element.style.color = "#339899";
         });
-        element.addEventListener("mouseout", function(){
-            element.style.color="inherit";
+        element.addEventListener("mouseout", function () {
+            element.style.color = "inherit";
         })
 
     }
- 
 }

@@ -1,24 +1,14 @@
-.container{
+.menuShoppingLists{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-
-}
-
-.menuShoppingLists{
-    order: 1;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 
 .menuShoppingList{
-    margin-top: 25px;
-    margin-left: 10px;
+    margin-top: 10px;
 
-    background: rgba(160, 212, 212, 0.9);
+    background: rgba(160, 212, 212, 1);
     color: #339899;
     border: 2px #339899 solid;
 
@@ -32,7 +22,6 @@
 }
 
 main{
-    order:2;
     margin: 20px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.5);

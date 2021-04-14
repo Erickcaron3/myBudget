@@ -16,6 +16,9 @@
         <jsp:include page="header.jsp"/>
         
         <main>
+
+            <span class="comeBack"><a class="comeBackLink" href="../index.jsp">Coming back to login page</a></span>
+
             <form class="creationForm form" action="" method="POST">
                 <div class="form-row">
                     <label for="firstName">First name</label>
@@ -66,8 +69,6 @@
                     <button id="reset">Reset</button>
                 </div>
             </form>
-
-                <span class="comeBack"><a class="comeBackLink" href="../index.jsp">Coming back to login page</a></span>
 
         </main>
 

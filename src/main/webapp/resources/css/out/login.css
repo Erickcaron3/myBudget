@@ -2,8 +2,7 @@
 
 main{
     width: 25%;
-    margin: auto;
-    margin-top: 20px;
+    margin: 20px auto auto;
     background: rgba(160, 212, 212, 1);
     border: 2px#339899 dotted;
     border-radius: 10px;
@@ -12,48 +11,26 @@ main{
     flex-direction: column;
 }
 
-.login{
+.form{
     display: flex;
     flex-direction: column;
-    margin: 25px;
+    padding: 10px 100px;
 }
 
-input, label{
-    align-items: center;
-    width: 40%;
-    margin: auto;
+.form-row{
+    margin-bottom: 5px;
 }
 
-button{
-    width: 25%;
-    border-radius: 10px;
-    align-items: center;
-    margin: auto;
-    margin-top: 5px;
-
-}
-
-.remMe{
-    display: flex;
-    flex-direction: row;
-}
-
-.remMe label{
-    order: 1;
-    margin:0;
-}
-.remMe input{
-    margin:0;
-}
-
-.login button{
-    font-family: 'Comic sans Ms', Courier, monospace;
-    color: white;
-    border-radius: 10px;
-    background: rgba(160, 212, 212, 1);
-    border: 2px#339899 dotted;
-    border-radius: 20px;
+.form-control{
+    display: block;
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .formOptions{
@@ -62,11 +39,17 @@ button{
 }
 
 .formOption{
-    margin: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+.form button{
+    font-family: 'Comic sans Ms', Courier, monospace;
+    color: white;
+    background: rgba(160, 212, 212, 1);
+    border: 2px#339899 dotted;
+    border-radius: 20px;
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
 }

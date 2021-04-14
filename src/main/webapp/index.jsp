@@ -7,24 +7,35 @@
         <link href="resources/css/out/default.css" rel="stylesheet" />
         <link href="resources/css/out/login.css" rel="stylesheet" />
         <script type="text/javascript" src="resources/js/out/login.js" defer></script>
+        <script type="text/javascript" src="resources/js/out/loginAPI.js" defer></script>
+
     </head>
 
     <body>
     <jsp:include page="/out/header.jsp"/>
 
     <main>
-            <form class="login" action="" method="POST">
-                <label for="login">Login</label>
-                <input id="login" type="text" required/>
+            <form class="login form" action="" method="POST">
+                <div class="form-row">
+                    <label for="login">Login</label>
+                    <input type="text" class="form-control" id="login" />
+                </div>
 
-                <label for="password">Password</label>
-                <input id="password" type="password" required/>
+                <div class="form-row">
+                    <label for="password">Password</label>
+                    <input id="password" class="form-control" type="password" required/>
+                </div>
 
-                <div class="remMe">    
-                    <label for="remember">Remember-me</label>
-                    <input type="checkbox" name="" id="remember">
-                </div>             
-                <button>Enter</button>
+                <div class="form-row">
+                    <label for="remember">
+                    <input type="checkbox" id="remember">Remember-me
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <button id="submit">Login</button>
+                </div>
+
             </form>
             <div class="formOptions">
                 <span class="formOption" id="formOptionCreate">Not member yet? <a href="out/create.jsp">Create your account now!</a></span>

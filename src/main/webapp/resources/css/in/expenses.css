@@ -1,29 +1,26 @@
-.container{
+main{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
 }
 
 .menuExpenses{
     order: 1;
     flex-shrink: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 
 .menuExpense{
-    margin-top: 25px;
-    margin-left: 10px;
-
-    background: rgba(160, 212, 212, 0.9);
+    background: rgba(160, 212, 212, 1);
     color: #339899;
     border: 2px #339899 solid;
 
     font-family: 'Comic sans Ms', Courier, monospace;
-    border-radius: 500px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .menuExpense a{
@@ -37,4 +34,39 @@ main{
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.5);
     border: 2px #339899 dotted;
+}
+
+.form{
+    padding: 20px 200px;
+    flex-grow: 1;
+}
+
+.form label, input{
+    display: block;
+}
+
+.form-row{
+    margin-bottom: 10px;
+    color:  #339899;
+}
+
+.row-control{
+    padding: 5px;
+    width: 100%;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.buttons button{
+    background: rgba(160, 212, 212, 1);
+    color: #339899;
+    border: 2px #339899 solid;
+    border-radius: 500px;
+    margin-left: 5%;
+
+    font-family: 'Comic sans Ms', Courier, monospace;
 }
