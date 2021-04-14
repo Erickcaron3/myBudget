@@ -8,14 +8,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "erick.caron")
+@ComponentScan
 
 public class WebConfig implements WebMvcConfigurer {
-
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/css/out/**", "/js/out/**","/img/**")
-                .addResourceLocations("/css/out/", "/js/out/", "/img/");
-    }
 
 }

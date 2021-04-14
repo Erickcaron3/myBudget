@@ -1,0 +1,63 @@
+main {
+    width: 50%;
+    margin: 20px auto auto;
+    background: rgba(160, 212, 212, 1);
+    border: 2px #339899 dotted;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px 100px;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form label {
+    display: block;
+}
+
+.form fieldset {
+    border: 0;
+    padding: 0;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.form-buttons button {
+    font-family: 'Comic sans Ms', Courier, monospace;
+    color: white;
+    background: rgba(160, 212, 212, 1);
+    border: 2px #339899 dotted;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.comeBack {
+    margin: 10px;
+    text-align: center;
+}
+
+.comeBackLink {
+    color: white;
+    text-decoration: inherit;
+}
+

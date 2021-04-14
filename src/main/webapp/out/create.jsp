@@ -4,10 +4,10 @@
     <head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="../css/out/default.css"> 
-        <link type="text/css" rel="stylesheet" href="../css/out/create.css"> 
-        <script type="text/javascript" src="../js/main.js" defer></script>
-        <script type="text/javascript" src="../js/out/createFormAPI.js" defer></script>
+        <link type="text/css" rel="stylesheet" href="/resources/css/out/default.css">
+        <link type="text/css" rel="stylesheet" href="/resources/css/out/create.css">
+        <script type="text/javascript" src="/resources/js/in/main.js" defer></script>
+        <script type="text/javascript" src="/resources/js/out/createFormAPI.js" defer></script>
 
     </head>
 
@@ -16,54 +16,63 @@
         <jsp:include page="header.jsp"/>
         
         <main>
-            <form class="creationForm" action="" method="POST">
-
-                <label for="firstName">First name</label>
-                <input type="text" name="firstName" id="firstName" />
-
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
-
-                <label for="gender">Gender</label>
-
-                <div class="gender" id="gender">
-                    <div class="m">
-                        <input type="radio" name="gender" value="M" >Male</input>
-                    </div>
-
-                    <div class="f">
-                        <input type="radio" name="gender" value="F">Female</input>
-                    </div>   
+            <form class="creationForm form" action="" method="POST">
+                <div class="form-row">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName" />
                 </div>
 
-                <label for="login">Login</label>
-                <input type="login" name="login" id="login" />
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control"  name="name" id="name" />
+                </div>
 
-                <label for="birthday">Date of birth </label>
-                <input type="date" name="birthday" id="birthday" />
+                <fieldset class="gender form-row">
+                    <legend>Gender</legend>
+                    <label class="form-check">
+                        <input type="radio" name="gender" value="M">Male
+                    </label>
+                    <label class="form-check">
+                        <input type="radio" name="gender" value="F">Female
+                    </label>
+                </fieldset>
 
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email"  />
 
-                <label for="password1">Password</label>
-                <input type="password" name="password1" id="password1" />
+                <div class="form-row">
+                    <label for="login">Login</label>
+                    <input type="login" class="form-control"  name="login" id="login" />
+                </div>
 
-                <label for="password2">Please repeat your password</label>
-                <input type="password2" name="password2" id="password2">
-                
-                    <div class="buttons">
-                        <button id="creation">Create your account</button>
-                        <button id="reset">Reset</button>
-                    </div>
-                </form>
+                <div class="form-row">
+                    <label for="birthday">Date of birth</label>
+                    <input type="date" class="form-control" name="birthday" id="birthday" />
+                </div>
+                <div class="form-row">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control"  name="email" id="email" />
+                </div>
+                <div class="form-row">
+                    <label for="password1">Password</label>
+                    <input type="password" class="form-control"  name="password1" id="password1" />
+                </div>
 
-                <span class="comeBack"><a href="../index.jsp">Coming back to login page</a></span>
+                <div class="form-row">
+                    <label for="password2">Please repeat your password</label>
+                    <input type="password2" class="form-control"  name="password2" id="password2">
+                </div>
+
+                <div class="form-buttons">
+                    <button id="creation">Create your account</button>
+                    <button id="reset">Reset</button>
+                </div>
+            </form>
+
+                <span class="comeBack"><a class="comeBackLink" href="../index.jsp">Coming back to login page</a></span>
 
         </main>
 
-        <jsp:include page="header.jsp"/>
+        <jsp:include page="footer.jsp"/>
 
-        </div>
 </body>
 </html>
 

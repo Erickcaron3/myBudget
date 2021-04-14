@@ -4,14 +4,13 @@
     <head>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-        <link href=<c:url value="/css/out/default.css"/> rel="stylesheet" />
-        <link href=<c:url value="/css/out/login.css"/> rel="stylesheet" />
-        <script type="text/javascript" src="<c:url value="/js/out/login.js"/>" defer></script>
+        <link href="resources/css/out/default.css" rel="stylesheet" />
+        <link href="resources/css/out/login.css" rel="stylesheet" />
+        <script type="text/javascript" src="resources/js/out/login.js" defer></script>
     </head>
 
     <body>
     <jsp:include page="/out/header.jsp"/>
-
 
     <main>
             <form class="login" action="" method="POST">
@@ -23,7 +22,7 @@
 
                 <div class="remMe">    
                     <label for="remember">Remember-me</label>
-                    <input type="radio" name="" id="remember">   
+                    <input type="checkbox" name="" id="remember">
                 </div>             
                 <button>Enter</button>
             </form>
@@ -36,8 +35,6 @@
 
     <jsp:include page="/out/footer.jsp"/>
 
-
-    </div>
 </body>
 </html>
 
