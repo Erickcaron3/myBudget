@@ -7,7 +7,6 @@
         <link type="text/css" rel="stylesheet" href="/resources/css/in/style.css">
         <link type="text/css" rel="stylesheet" href="/resources/css/in/expenses.css">
         <script type="text/javascript" src="/resources/js/in/main.js" defer></script>
-        <script type="text/javascript" src="/resources/js/in/expensesRedirectAPI.js" defer></script>
     </head>
 
     <body>
