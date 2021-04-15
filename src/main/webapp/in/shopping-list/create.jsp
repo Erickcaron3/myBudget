@@ -7,13 +7,12 @@
         <link type="text/css" rel="stylesheet" href="/resources/css/in/style.css">
         <link type="text/css" rel="stylesheet" href="/resources/css/in/shopping-list.css">
         <script type="text/javascript" src="/resources/js/in/main.js" defer></script>
-
     </head>
 
 <body>
     <jsp:include page="../header.jsp"/>
     <jsp:include page="../menu.jsp"/>
-    <jsp:include page="menu-intra-shopping-list.jsp"/>
+    <jsp:include page="menu-shopping-list.jsp"/>
     <jsp:include page="../footer.jsp"/>
 </body>
 </html>

@@ -4,7 +4,7 @@ const password = document.querySelector("#password");
 const submitBtn = document.querySelector("#submit");
 
 function isTextOnly(input) {
-    const regex = "[a-zA-Z]+";
+    const regex = "[\\w]+";
     if (input.match(regex)) {
         return true;
     }
