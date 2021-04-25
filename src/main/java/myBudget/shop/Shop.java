@@ -1,19 +1,22 @@
+package myBudget.shop;
+
 import lombok.*;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Currency {
-
+@Table(name="shops")
+public class Shop {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private Currency currency;
-
+    private long id;
+    private String name;
+    private String category;
 }

@@ -1,6 +1,6 @@
-package erick.caron.config;
+package myBudget.config;
 
-import erick.caron.web.WebConfig;
+import myBudget.web.WebConfig;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.CharacterEncodingFilter;

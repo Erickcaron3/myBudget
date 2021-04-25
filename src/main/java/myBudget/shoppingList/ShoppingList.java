@@ -1,14 +1,23 @@
+package myBudget.shoppingList;
+
 import lombok.*;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
-@EqualsAndHashCode
+
+@Table(name="shopping-lists")
 public class ShoppingList {
 
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     private int createdBy;
     private Boolean isActive; //SQL - Bit: 0 false, 1 true;
     private String product;

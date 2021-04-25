@@ -1,4 +1,4 @@
-package erick.caron.web;
+package myBudget.web;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
