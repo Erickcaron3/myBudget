@@ -70,3 +70,24 @@ main{
 
     font-family: 'Comic sans Ms', Courier, monospace;
 }
+
+.table-main {
+    padding: 15px;
+    color: #339899;
+}
+.table-header {
+    text-align: center;
+    background:#339899;
+    color: white;
+
+}
+
+.table-header th{
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.row-link{
+    text-decoration: none;
+    color: #339899;
+}

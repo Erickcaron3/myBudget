@@ -2,16 +2,14 @@ package myBudget.shoppingList;
 
 import lombok.*;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 
+@Entity
 @Table(name="shopping-lists")
 public class ShoppingList {
 

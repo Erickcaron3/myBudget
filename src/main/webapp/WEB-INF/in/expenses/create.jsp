@@ -1,4 +1,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form"
+           uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="input" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +10,7 @@
         <link type="text/css" rel="stylesheet" href="/resources/css/in/style.css">
         <link type="text/css" rel="stylesheet" href="/resources/css/in/expenses.css">
         <script type="text/javascript" src="/resources/js/in/main.js" defer></script>
+
     </head>
 
     <body>
@@ -16,30 +20,30 @@
 
         <main>
 
-            <form class="form" action ="" method="post">
+            <form:form class="form" action ="" method="post" modelAttribute="expense">
                 <div class="form-row">
                     <label for="shop">Shop</label>
-                    <input type="number" class="row-control" name="shop" id="shop">
+                    <form:input path="buyer" type="text" class="row-control" name="shop" id="shop"/>
                 </div>
                 <div class="form-row">
-                    <label for="mode">Mode</label>
-                    <input type="number" class="row-control" name="mode" id="mode">
+                    <label for="shop">Buyer</label>
+                    <form:input path="shop" type="text" class="row-control" name="shop" id="shop"/>
                 </div>
                 <div class="form-row">
                     <label for="currency">Currency</label>
-                    <input type="number" class="row-control" name="currency" id="currency">
+                    <form:input path="currency" type="text" class="row-control" name="currency" id="currency"/>
                 </div>
                 <div class="form-row">
                     <label for="total-amount">Total amount</label>
-                    <input type="number" class="row-control" name="total-amount" id="total-amount">
+                    <form:input path="totalAmount" type="number" class="row-control" name="total-amount" id="total-amount"/>
                 </div>
                 <div class="form-row">
                     <label for="personal-amount">Personal amount</label>
-                    <input type="number" class="row-control"  name="personal-amount" id="personal-amount">
+                    <form:input path="personalAmount" type="number" class="row-control"  name="personal-amount" id="personal-amount"/>
                 </div>
                 <div class="form-row">
                     <label for="shared-amount">Shared amount</label>
-                    <input type="number" class="row-control" name="shared-amount" id="shared-amount">
+                    <form:input path="sharedAmount" type="number" class="row-control" name="shared-amount" id="shared-amount"/>
                 </div>
                 <div class="form-row">
 
@@ -48,7 +52,7 @@
                     <button type="submit" class="submit">Create your expense</button>
                     <button type="submit" class="submit">Reset</button>
                 </div>
-            </form>
+            </form:form>
         </main>
         <jsp:include page="../footer.jsp"/>
     </body>

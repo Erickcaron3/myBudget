@@ -1,5 +1,4 @@
 const comeBackLink = document.querySelector(".comeBackLink");
-console.log(comeBackLink);
 comeBackLink.addEventListener("mouseover", function(){
     comeBackLink.style.color="#339899";
 });

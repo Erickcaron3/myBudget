@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 
+@Entity
 @Table(name="expenses")
 public class Expense {
 
@@ -24,6 +25,6 @@ public class Expense {
     private BigDecimal sharedAmount;
     private String currency;
     private String shop;
-    private int buyer;
+    private String buyer;
 
 }
