@@ -4,7 +4,7 @@ main{
     flex-wrap: nowrap;
 }
 
-.menuExpenses{
+.menuCurrencies{
     order: 1;
     flex-shrink: 0;
     display: flex;
@@ -13,7 +13,7 @@ main{
 }
 
 
-.menuExpense{
+.menuCurrency{
     background: rgba(160, 212, 212, 1);
     color: #339899;
     border: 2px #339899 solid;
@@ -23,7 +23,7 @@ main{
     margin-top: 10px;
 }
 
-.menuExpense a{
+.menuCurrency a{
     text-decoration: none;
     color: inherit;
 }

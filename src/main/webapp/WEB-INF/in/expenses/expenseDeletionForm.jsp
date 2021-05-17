@@ -47,8 +47,8 @@
 
         </div>
         <div class="buttons">
-            <button type="submit" class="submit">Delete your expense</button>
-            <button type="submit" class="submit">Cancel</button>
+            <button type="submit" name="validation" value="delete" class="submit">Delete your expense</button>
+            <button type="submit" name="validation" value="cancel" class="submit">Cancel</button>
         </div>
     </form:form>
 </main>

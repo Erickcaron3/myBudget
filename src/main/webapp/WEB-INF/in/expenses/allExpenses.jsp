@@ -16,6 +16,7 @@
         <jsp:include page="menu-expenses.jsp"/>
 
         <main>
+
             <table class="table-main">
                 <tbody>
               <tr class="table-header">

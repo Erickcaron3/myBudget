@@ -21,7 +21,7 @@
 
     <span class="comeBack"><a class="comeBackLink" href="/">Coming back to login page</a></span>
 
-    <form:form class="creationForm form" method="POST" modelAttribute="user">
+    <form:form class="creationForm form" method="POST" modelAttribute="userToDelete">
         <div class="form-row">
             <label for="firstName">First name</label>
             <form:input type="text" class="form-control" name="firstName" path="firstName" id="firstName"/>
@@ -45,7 +45,7 @@
 
         <div class="form-row">
             <label for="login">Login</label>
-            <form:input type="text" class="form-control" name="login" path="login" id="login"/>
+            <form:input type="login" class="form-control" name="login" path="login" id="login"/>
         </div>
 
         <div class="form-row">

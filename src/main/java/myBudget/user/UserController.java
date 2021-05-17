@@ -1,46 +1,60 @@
 package myBudget.user;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@AllArgsConstructor
+
 @Controller
 public class UserController {
 
-    @Autowired
-    private UserDAO userDAO;
 
-    @GetMapping(value="/user/createForm")
-    public String showUserCreationForm(Model model){
+    final private UserService userService;
+
+    @GetMapping(value = "/user/createForm")
+    public String showUserCreationForm(Model model) {
         model.addAttribute("user", new User());
         return "/out/create";
     }
 
     @PostMapping("/user/createForm")
     public String create(@ModelAttribute User user) {
-        userDAO.create(user);
+        userService.addUser(user);
         return "index";
     }
 
-    @RequestMapping("/user/update/{id}")
-    @ResponseBody
-    public void update(@PathVariable long id){
-
+    @GetMapping("/user/update/{id}")
+    public String showUpdateUserForm(@PathVariable Long id, Model model) {
+        User userToUpdate = userService.getUserById(id);
+        model.addAttribute("userToUpdate", userToUpdate);
+        return "users/userEditionForm";
     }
 
-    @RequestMapping("/user/delete/{id}")
-    public void delete(@PathVariable long id) {
-
-        User userToDelete = userDAO.findById(id);
-        userDAO.delete(userToDelete);
+    @PostMapping("user/update/{id}")
+    public void update(User userToUpdate) {
+        userService.updateUser(userToUpdate);
     }
 
-    @RequestMapping(value = "/user/all", method = RequestMethod.GET)
-    public List<User> findAll(){
-        return userDAO.findAll();
+    @GetMapping("user/delete/{id}")
+    public String delete(@PathVariable Long id, Model model){
+        User userTodelete = userService.getUserById(id);
+        model.addAttribute(userTodelete);
+        return "users/userDeletionForm";
+    }
+    @PostMapping("/user/delete/{id}")
+    public void delete(@PathVariable Long id) {
+        userService.deleteUserById(id);
+    }
+
+    @GetMapping(value = "/user/all")
+    public String showAll(Model model) {
+        List<User> allUsers = userService.showAllUsers();
+        model.addAttribute(allUsers);
+        return "in/users/allUsers";
     }
 
 }
