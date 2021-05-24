@@ -34,7 +34,7 @@
                     <td>${shop.category}</td>
 
                     <td><a class="row-link" href="/shop/update/${shop.id}">Edit</a></td>
-                    <td><a class="row-link" href="/shop/delete/${shop.id}">Delete</a></td>
+                    <c:if test="${shop.isDeletable == true}"><td><a class="row-link" href="/shop/delete/${shop.id}">Delete</a></td></c:if>
                 </tr>
             </c:forEach>
             </tbody>

@@ -47,7 +47,7 @@
             <form:errors path="country" cssClass="error"/>
         </div>
         <div class="buttons">
-            <button type="submit" class="submit" name="validation" value="delete">>Delete a currency</button>
+            <button type="submit" class="submit" name="validation" value="delete">Delete a currency</button>
             <button type="submit" class="submit" name="validation" value="cancel">Cancel</button>
         </div>
     </form:form>

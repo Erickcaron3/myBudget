@@ -28,7 +28,7 @@
 
         <main>
 
-            <form:form class="form" action ="" method="post" modelAttribute="expense">
+            <form:form class="form" method="post" modelAttribute="expense">
                 <div class="form-row">
                    <label for="shop">Shop</label>
                     <form:select itemValue="name" itemLabel="name" path="shop" items="${shops}" id="shop"/>

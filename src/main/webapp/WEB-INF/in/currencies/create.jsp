@@ -46,7 +46,7 @@
             <form:errors path="country" cssClass="error"/>
         </div>
         <div class="buttons">
-            <button type="submit" name="validation" value="update" class="submit">Update a currency</button>
+            <button type="submit" name="validation" value="update" class="submit">Add a currency</button>
             <button type="submit" name="validation" value="cancel" class="submit">Cancel</button>
         </div>
     </form:form>

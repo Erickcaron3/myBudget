@@ -25,11 +25,11 @@
         </div>
         <div class="form-row">
             <label for="shop">Buyer</label>
-            <form:input path="shop" type="text" class="row-control" name="shop" id="shop" />
+            <form:input path="shop.name" type="text" class="row-control" name="shop" id="shop" />
         </div>
         <div class="form-row">
             <label for="currency">Currency</label>
-            <form:input path="currency" type="text" class="row-control" name="currency" id="currency"/>
+            <form:input path="currency.shortcut" type="text" class="row-control" name="currency" id="currency"/>
         </div>
         <div class="form-row">
             <label for="total-amount">Total amount</label>

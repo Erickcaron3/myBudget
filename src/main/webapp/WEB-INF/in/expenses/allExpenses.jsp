@@ -17,6 +17,13 @@
 
         <main>
 
+            <p class="resume">
+                    <c:if test="${numberOfExpenses == 0}">No expenses created</c:if>
+                    <c:if test="${numberOfExpenses == 1}">You have ${numberOfExpenses} expense</c:if>
+                    <c:if test="${numberOfExpenses > 1}">You have ${numberOfExpenses} expenses </c:if>
+            </p>
+
+
             <table class="table-main">
                 <tbody>
               <tr class="table-header">
@@ -29,10 +36,10 @@
                     <c:forEach var="expense" items="${allExpenses}">
                         <tr class="table-row">
                         <td>${expense.buyer}</td>
-                        <td>${expense.shop}</td>
-                        <td>${expense.totalAmount} ${expense.currency}</td>
-                        <td>${expense.personalAmount} ${expense.currency}</td>
-                        <td>${expense.sharedAmount} ${expense.currency}</td>
+                        <td>${expense.shop.name}</td>
+                        <td>${expense.totalAmount} ${expense.currency.shortcut}</td>
+                        <td>${expense.personalAmount} ${expense.currency.shortcut}</td>
+                        <td>${expense.sharedAmount} ${expense.currency.shortcut}</td>
                         <td><a class="row-link" href="/expense/update/${expense.id}">Edit</a></td>
                         <td><a class="row-link" href="/expense/delete/${expense.id}">Delete</a></td>
                         </tr>

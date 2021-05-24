@@ -4,6 +4,8 @@ main{
     flex-wrap: nowrap;
 }
 
+
+
 .menuCurrencies{
     order: 1;
     flex-shrink: 0;

@@ -30,7 +30,7 @@
                 <td>${currency.name}</td>
                 <td>${currency.country} </td>
                 <td><a class="row-link" href="/currency/update/${currency.id}">Edit</a></td>
-                <td><a class="row-link" href="/currency/delete/${currency.id}">Delete</a></td>
+                <c:if test="${currency.isDeletable == true}"><td><a class="row-link" href="/currency/delete/${currency.id}">Delete</a></td></c:if>
             </tr>
         </c:forEach>
         </tbody>

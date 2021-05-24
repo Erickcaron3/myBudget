@@ -9,6 +9,11 @@
         <script type="text/javascript" src="../resources/js/out/login.js" defer></script>
         <script type="text/javascript" src="../resources/js/out/loginAPI.js" defer></script>
 
+        <style>
+            body{
+                background-image: linear-gradient(rgba(160, 212, 212, 1), rgba(255,166,115,1));
+            }
+        </style>
     </head>
 
     <body>
@@ -18,12 +23,13 @@
             <form class="login form" action="/login" method="POST">
                 <div class="form-row">
                     <label for="login">Login</label>
-                    <input type="text" bame="login" class="form-control" id="login" />
+                    <input type="text" name="login" class="form-control" id="login" />
                 </div>
 
                 <div class="form-row">
                     <label for="password">Password</label>
                     <input id="password" name="password" class="form-control" type="password" required/>
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                 </div>
 
                 <div class="form-row">

@@ -29,11 +29,17 @@ main{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     order:2;
     margin: 20px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.75);
     border: 2px #339899 dotted;
+}
+
+.resume{
+    color:#339899;
 }
 
 .form{

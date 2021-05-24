@@ -14,6 +14,28 @@
         <jsp:include page="../header.jsp"/>
         <jsp:include page="../menu.jsp"/>
         <jsp:include page="menu-shopping-list.jsp"/>
+
+        <table class="table-main">
+            <tbody>
+            <tr class="table-header">
+                <th>Name</th>
+                <th>Category</th>
+            </tr>
+            <c:forEach var="shoppingList" items="${allShoppingLists}">
+                <tr class="table-row">
+                    <td>
+                        <c:if test="${shoppingList.isActive == true}"> Opened</c:if>
+                        <c:if test="${shoppingList.isActive == false}"> Closed </c:if>
+
+                    </td>
+
+                    <td><a class="row-link" href="/shop/update/${shop.id}">Edit</a></td>
+                    <c:if test="${shop.isDeletable == true}"><td><a class="row-link" href="/shop/delete/${shop.id}">Delete</a></td></c:if>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
+
         <jsp:include page="../footer.jsp"/>
     </body>
 </html>
