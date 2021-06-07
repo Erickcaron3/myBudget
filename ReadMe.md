@@ -4,7 +4,7 @@ myBudget is a very basic application of family's budget handling.  Create as a f
 
 ## Technologies
 
-Java, Spring, Hibernate (JPA, Validator), JSP  
+Java, Spring, Hibernate (JPA, Validator), JSP, Lombok  
 Frontend without framework: HTML, CSS, JavaScript
 
 ## Description
